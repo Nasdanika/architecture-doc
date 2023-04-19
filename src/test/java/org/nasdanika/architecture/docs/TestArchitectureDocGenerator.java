@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import org.eclipse.emf.common.util.URI;
@@ -39,9 +40,11 @@ import org.nasdanika.graph.emf.Util;
 import org.nasdanika.graph.processor.IntrospectionLevel;
 import org.nasdanika.graph.processor.ProcessorInfo;
 import org.nasdanika.html.ecore.gen.processors.EcoreNodeProcessorFactory;
+import org.nasdanika.html.model.app.Label;
 import org.nasdanika.html.model.app.graph.Registry;
 import org.nasdanika.html.model.app.graph.URINodeProcessor;
 import org.nasdanika.html.model.app.graph.emf.EObjectReflectiveProcessorFactory;
+import org.nasdanika.common.Diagnostic;
 
 /**
  * Tests Ecore -> Graph -> Processor -> actions generation
@@ -66,15 +69,15 @@ public class TestArchitectureDocGenerator {
 	@Test
 	public void testArchitectureDocGenerator() throws IOException {		
 		List<EPackage> architectureEPackages = Arrays.asList(
-				org.nasdanika.architecture.core.CorePackage.eINSTANCE,
-				C4Package.eINSTANCE,
-				org.nasdanika.architecture.cloud.azure.core.CorePackage.eINSTANCE, 
-				ComputePackage.eINSTANCE, 
-				NetworkingPackage.eINSTANCE, 
-				StoragePackage.eINSTANCE,
-				DockerPackage.eINSTANCE,
-				KubernetesPackage.eINSTANCE,
-				HelmPackage.eINSTANCE);
+				org.nasdanika.architecture.core.CorePackage.eINSTANCE); //,
+//				C4Package.eINSTANCE,
+//				org.nasdanika.architecture.cloud.azure.core.CorePackage.eINSTANCE, 
+//				ComputePackage.eINSTANCE, 
+//				NetworkingPackage.eINSTANCE, 
+//				StoragePackage.eINSTANCE,
+//				DockerPackage.eINSTANCE,
+//				KubernetesPackage.eINSTANCE,
+//				HelmPackage.eINSTANCE);
 		
 //		List<EPackage> ePackages = Arrays.asList(
 //				org.nasdanika.ncore.NcorePackage.eINSTANCE,
@@ -146,17 +149,17 @@ public class TestArchitectureDocGenerator {
 		ResourceSet actionModelsResourceSet = new ResourceSetImpl();		
 		actionModelsResourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 		
-//		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
-//		for (Entry<String, URINodeProcessor> processorEntry: topLevelProcessors.entrySet()) {			
-//			Collection<Label> labels = processorEntry.getValue().call(progressMonitor, diagnosticConsumer);
-//			if (labels != null && !labels.isEmpty()) {
-//				URI actionModelUri = URI.createFileURI(new File(actionModelsDir, processorEntry.getKey() + ".xml").getAbsolutePath());				
-//				Resource actionModelResource = actionModelsResourceSet.createResource(actionModelUri);
-//				actionModelResource.getContents().addAll(labels);				
-//				actionModelResource.save(null);						
-//			}
-//			System.out.println(labels);
-//		}
+		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
+		for (Entry<String, URINodeProcessor> processorEntry: topLevelProcessors.entrySet()) {			
+			Collection<Label> labels = processorEntry.getValue().createLabelsSupplier().call(progressMonitor, diagnosticConsumer);
+			if (labels != null && !labels.isEmpty()) {
+				URI actionModelUri = URI.createFileURI(new File(actionModelsDir, processorEntry.getKey() + ".xml").getAbsolutePath());				
+				Resource actionModelResource = actionModelsResourceSet.createResource(actionModelUri);
+				actionModelResource.getContents().addAll(labels);				
+				actionModelResource.save(null);						
+			}
+			System.out.println(labels);
+		}
 		
 	}
 
