@@ -1,0 +1,1196 @@
+[
+    {
+        "identifiers": ["uuid:692e2e7d-85b4-468f-aca4-302466970106"],
+        "name": "Nasdanika",
+        "icon": "https://docs.nasdanika.org/images/nasdanika-logo.png",
+        "location": "https://www.nasdanika.org",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:692e2e7d-85b4-468f-aca4-302466970106"]
+        },
+        "identifiers": ["uuid:bd94efb2-911b-49f2-b9a1-637aa7be355e"],
+        "name": "Architecture Models Documentation",
+        "icon": "fa fa-book",
+        "location": "index.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:bd94efb2-911b-49f2-b9a1-637aa7be355e"]
+        },
+        "identifiers": ["uuid:b12d7afe-6345-4939-afff-c5702c788862"],
+        "name": "Cloud",
+        "icon": "https://img.icons8.com/stickers/16/null/cloud-computing.svg",
+        "location": "cloud/index.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:b12d7afe-6345-4939-afff-c5702c788862"]
+        },
+        "identifiers": ["uuid:97c7f42f-72c0-47c6-a7ce-5332e523dbbf"],
+        "name": "Azure",
+        "icon": "https://img.icons8.com/fluency/16/null/azure-1.svg",
+        "location": "cloud/azure/index.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:bd94efb2-911b-49f2-b9a1-637aa7be355e"]
+        },
+        "identifiers": ["uuid:66a1842e-e94b-404d-904c-c324d55daa56"],
+        "name": "Containers",
+        "icon": "https://img.icons8.com/external-smashingstocks-isometric-smashing-stocks/16/null/external-container-logistic-smashingstocks-isometric-smashing-stocks.svg",
+        "location": "containers/index.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:692e2e7d-85b4-468f-aca4-302466970106"]
+        },
+        "identifiers": ["uuid:7312eced-6772-48b0-b076-77ee030db2f5"],
+        "name": "Search",
+        "icon": "fas fa-search",
+        "location": "search.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "container": {
+            "reference": "children",
+            "identifiers": ["uuid:692e2e7d-85b4-468f-aca4-302466970106"]
+        },
+        "identifiers": ["uuid:8e09f7a1-5c23-43dc-9952-f8297de752b4"],
+        "name": "Glossary",
+        "icon": "fas fa-book",
+        "location": "glossary.html",
+        "type": {
+            "name": "Action",
+            "ns-uri": "ecore://nasdanika.org/html/app"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/core"],
+        "name": "core",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "core/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/ActionRole"],
+        "name": "ActionRole",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EEnum.gif",
+        "location": "core/eClassifiers/ActionRole/index.html",
+        "type": {
+            "name": "EEnum",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/ArchitectureElement"],
+        "name": "ArchitectureElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/ArchitectureElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/CompositeNode"],
+        "name": "CompositeNode",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/CompositeNode/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Concern"],
+        "name": "Concern",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Concern/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Domain"],
+        "name": "Domain",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Domain/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Event"],
+        "name": "Event",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Event/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Facet"],
+        "name": "Facet",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Facet/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Impact"],
+        "name": "Impact",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Impact/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/ImpactType"],
+        "name": "ImpactType",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/ImpactType/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/ModelElement"],
+        "name": "ModelElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/ModelElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Node"],
+        "name": "Node",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Node/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Relationship"],
+        "name": "Relationship",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Relationship/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Stage"],
+        "name": "Stage",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Stage/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Stakeholder"],
+        "name": "Stakeholder",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Stakeholder/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Tag"],
+        "name": "Tag",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Tag/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/View"],
+        "name": "View",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/View/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/ViewElement"],
+        "name": "ViewElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/ViewElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/core/eClassifiers/Viewpoint"],
+        "name": "Viewpoint",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "core/eClassifiers/Viewpoint/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/c4"],
+        "name": "c4",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "c4/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/CodeElement"],
+        "name": "CodeElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/CodeElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/Component"],
+        "name": "Component",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/Component/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/Container"],
+        "name": "Container",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/Container/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/Module"],
+        "name": "Module",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/Module/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/Person"],
+        "name": "Person",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/Person/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/Relationship"],
+        "name": "Relationship",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/Relationship/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/System"],
+        "name": "System",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/System/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/Technology"],
+        "name": "Technology",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/Technology/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/TechnologyConsumer"],
+        "name": "TechnologyConsumer",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/TechnologyConsumer/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/TechnologyProduct"],
+        "name": "TechnologyProduct",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/TechnologyProduct/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/c4"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/c4/eClassifiers/TechnologyVersion"],
+        "name": "TechnologyVersion",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "c4/eClassifiers/TechnologyVersion/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"],
+        "name": "compute",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "cloud/azure/compute/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/AppService"],
+        "name": "App Service",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10035-icon-service-App-Services.svg",
+        "description": "An HTTP-based service for hosting web applications, REST APIs, and mobile back ends.",
+        "location": "cloud/azure/compute/eClassifiers/AppService/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/ContainerInstance"],
+        "name": "Container Instance",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10104-icon-service-Container-Instances.svg",
+        "description": "Azure Container Instances (ACI) allows you to quickly and easily run containers on Azure without managing servers or having to learn new tools",
+        "location": "cloud/azure/compute/eClassifiers/ContainerInstance/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/Disk"],
+        "name": "Disk",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10032-icon-service-Disks.svg",
+        "description": "A block-level storage volume managed by Azure and used with Azure Virtual Machines",
+        "location": "cloud/azure/compute/eClassifiers/Disk/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/DiskType"],
+        "name": "Disk Type",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "description": "Azure managed disks currently offers five disk types, each intended to address a specific customer scenario",
+        "location": "cloud/azure/compute/eClassifiers/DiskType/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/KubernetesService"],
+        "name": "Kubernetes Service",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10023-icon-service-Kubernetes-Services.svg",
+        "description": "Azure Kubernetes Service (AKS) offers the quickest way to start developing and deploying cloud-native apps in Azure, datacenters, or at the edge with built-in code-to-cloud pipelines and guardrails",
+        "location": "cloud/azure/compute/eClassifiers/KubernetesService/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/VirtualMachine"],
+        "name": "Virtual Machine",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10021-icon-service-Virtual-Machine.svg",
+        "description": "An image service instance that provides on-demand and scalable computing resources with usage-based pricing",
+        "location": "cloud/azure/compute/eClassifiers/VirtualMachine/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/VirtualMachineImage"],
+        "name": "Virtual Machine Image",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10040-icon-service-VM-Images-(Classic).svg",
+        "description": "Initial contents of a VM disk used to initialize a VM",
+        "location": "cloud/azure/compute/eClassifiers/VirtualMachineImage/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/VirtualMachineScaleSet"],
+        "name": "Virtual Machine Scale Set",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/compute/10034-icon-service-VM-Scale-Sets.svg",
+        "description": "Azure virtual machine scale sets let you create and manage a group of identical, load balanced VMs.",
+        "location": "cloud/azure/compute/eClassifiers/VirtualMachineScaleSet/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/compute/eClassifiers/VirtualMachineSize"],
+        "name": "Virtual Machine Size",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "description": "Size of a virtual machine in terms of CPU and RAM",
+        "location": "cloud/azure/compute/eClassifiers/VirtualMachineSize/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"],
+        "name": "Core",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "cloud/azure/core/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/AvailabilityZone"],
+        "name": "Availability Zone",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "description": "One or more physically and logically separated datacenters with their own independent power source, network, and cooling.",
+        "location": "cloud/azure/core/eClassifiers/AvailabilityZone/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/AzureElement"],
+        "name": "AzureElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/core/eClassifiers/AzureElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/GenericResource"],
+        "name": "Generic Resource",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "description": "A resource which does not have a model class. Generic resources have \"kind\" (type).",
+        "location": "cloud/azure/core/eClassifiers/GenericResource/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/Location"],
+        "name": "Location",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/core/eClassifiers/Location/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/ManagementGroup"],
+        "name": "Management Group",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/general/10011-icon-service-Management-Groups.svg",
+        "description": "Management groups are containers that help manage access, policy, and compliance across multiple subscriptions",
+        "location": "cloud/azure/core/eClassifiers/ManagementGroup/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/ManagementGroupElement"],
+        "name": "ManagementGroupElement",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/core/eClassifiers/ManagementGroupElement/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/Region"],
+        "name": "Region",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "description": "A set of datacenters, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network",
+        "location": "cloud/azure/core/eClassifiers/Region/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/RegionPair"],
+        "name": "RegionPair",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/core/eClassifiers/RegionPair/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/Resource"],
+        "name": "Resource",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "description": "An entity managed by Azure",
+        "location": "cloud/azure/core/eClassifiers/Resource/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/ResourceGroup"],
+        "name": "Resource Group",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/general/10007-icon-service-Resource-Groups.svg",
+        "description": "purum",
+        "location": "cloud/azure/core/eClassifiers/ResourceGroup/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/Subscription"],
+        "name": "Subscription",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/general/10002-icon-service-Subscriptions.svg",
+        "description": "A logical container used to provision related resources",
+        "location": "cloud/azure/core/eClassifiers/Subscription/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/core/eClassifiers/Workload"],
+        "name": "Workload",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/core/eClassifiers/Workload/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"],
+        "name": "networking",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "cloud/azure/networking/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/NetworkInterface"],
+        "name": "NetworkInterface",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/networking/10080-icon-service-Network-Interfaces.svg",
+        "location": "cloud/azure/networking/eClassifiers/NetworkInterface/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/PrivateEnpoint"],
+        "name": "PrivateEnpoint",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/networking/eClassifiers/PrivateEnpoint/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/PublicEndpoint"],
+        "name": "PublicEndpoint",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/networking/eClassifiers/PublicEndpoint/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/Service"],
+        "name": "Service",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/networking/eClassifiers/Service/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/ServiceEndpoint"],
+        "name": "ServiceEndpoint",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/networking/eClassifiers/ServiceEndpoint/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/Subnet"],
+        "name": "Subnet",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/networking/02742-icon-service-Subnet.svg",
+        "location": "cloud/azure/networking/eClassifiers/Subnet/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/SubnetResource"],
+        "name": "SubnetResource",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/networking/eClassifiers/SubnetResource/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/VirtualNetwork"],
+        "name": "Virtual Network",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/networking/10061-icon-service-Virtual-Networks.svg",
+        "location": "cloud/azure/networking/eClassifiers/VirtualNetwork/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/networking/eClassifiers/VirtualNetworkResource"],
+        "name": "VirtualNetworkResource",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/networking/eClassifiers/VirtualNetworkResource/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"],
+        "name": "storage",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "cloud/azure/storage/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage/eClassifiers/AzureFiles"],
+        "name": "AzureFiles",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/storage/eClassifiers/AzureFiles/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage/eClassifiers/BlobStorage"],
+        "name": "BlobStorage",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/storage/eClassifiers/BlobStorage/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage/eClassifiers/DataLakeStorageGen2"],
+        "name": "DataLakeStorageGen2",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/storage/eClassifiers/DataLakeStorageGen2/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage/eClassifiers/QueueStorage"],
+        "name": "QueueStorage",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/storage/eClassifiers/QueueStorage/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage/eClassifiers/StorageAccount"],
+        "name": "Storage Account",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/architecture@main/cloud/azure/icons/svg/Icons/storage/10086-icon-service-Storage-Accounts.svg",
+        "location": "cloud/azure/storage/eClassifiers/StorageAccount/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/cloud/azure/storage/eClassifiers/TableStorage"],
+        "name": "TableStorage",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "cloud/azure/storage/eClassifiers/TableStorage/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/docker"],
+        "name": "docker",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "containers/docker/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/containers/docker"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/docker/eClassifiers/Container"],
+        "name": "Container",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "containers/docker/eClassifiers/Container/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/containers/docker"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/docker/eClassifiers/Image"],
+        "name": "Image",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "containers/docker/eClassifiers/Image/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/containers/docker"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/docker/eClassifiers/Registry"],
+        "name": "Registry",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "containers/docker/eClassifiers/Registry/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/kubernetes"],
+        "name": "kubernetes",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "containers/kubernetes/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/containers/kubernetes"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/kubernetes/eClassifiers/Cluster"],
+        "name": "Cluster",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "containers/kubernetes/eClassifiers/Cluster/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/containers/kubernetes"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/kubernetes/eClassifiers/Workload"],
+        "name": "Workload",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "containers/kubernetes/eClassifiers/Workload/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/helm"],
+        "name": "helm",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EPackage.gif",
+        "location": "containers/helm/index.html",
+        "type": {
+            "name": "EPackage",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    },
+    {
+        "container": {
+            "reference": "eClassifiers",
+            "identifiers": ["ecore://nasdanika.org/architecture/containers/helm"]
+        },
+        "identifiers": ["ecore://nasdanika.org/architecture/containers/helm/eClassifiers/Chart"],
+        "name": "Chart",
+        "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/icons/EClass.gif",
+        "location": "containers/helm/eClassifiers/Chart/index.html",
+        "type": {
+            "name": "EClass",
+            "ns-uri": "http://www.eclipse.org/emf/2002/Ecore"
+        }
+    }
+]
