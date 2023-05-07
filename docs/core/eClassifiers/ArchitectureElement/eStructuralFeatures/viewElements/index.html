@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <title>viewElements</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css">
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="file:///C:/Users/Pavel/git/html/ecore.gen/web-resources/components/table.js"></script>
+  
+<script src="../../../../../search-documents.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>
+
+<script>
+// Script for full-text search of JsTree
+
+window.nsdJsTreeSearchCallback = function(str, node) { 
+    var sf = new $.vakata.search(str, true, { caseSensitive : false, fuzzy : false }); 
+    if (sf.search(node.text).isMatch) {
+		return true;
+	} 
+    let searchResult = this.search(str); 
+    for (const sr in searchResult) {
+        if (searchResult[sr].ref === node.original['data-nsd-label-uuid']) {
+            return true;
+        } 
+    } 
+    return false; 
+}.bind(lunr(function () {
+			  this.ref('id');
+			  this.field('title');
+			  this.field('content');
+
+			  for (const key in searchDocuments) {
+				  let doc = searchDocuments[key];
+				this.add({
+					id: doc['action-uuid'],
+					title: doc.title,
+					path: doc.path,
+					content: doc.content
+				});  
+			  }
+			}));
+</script>
+</head>
+  <body>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://www.nasdanika.org" data-nsd-label-uuid="74b9ec5c-59fb-4cbd-8235-4a27aa0c4829" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item">
+              <a href="../../../../../search.html" data-nsd-label-uuid="ad33e32a-511a-4b61-9b02-534f52150daa" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../../../../glossary.html" data-nsd-label-uuid="ab0c055f-9e61-4357-8402-6e99081e491e" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="../../../../../index.html" data-nsd-label-uuid="73bafe8d-abec-4aa0-b4a7-c70877b2d985" class="navbar-brand"><span class="fa fa-book nsd-app-label-icon"></span>Architecture Models Documentation</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_h0" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_h0" class="collapse navbar-collapse"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <input type="text" id="5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1">
+          <div id="5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel"></div>
+          <script>$(document).ready( function() {
+$('#5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../../../../index.html';"},"children":[{"a_attr":{"onclick":"window.location='../../../ActionRole/index.html';"},"data-nsd-label-uuid":"48d19d50-da22-417b-9e31-03a734dd4985","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EEnum.gif","id":"nsd-app-nav-item-fa94c425-2b38-46ce-8ba5-005b8e217136","text":"ActionRole","type":"leaf"},{"a_attr":{"onclick":"window.location='../../index.html';"},"data-nsd-label-uuid":"8a51d796-5aa6-48ec-88c6-cc3bc4714722","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","state":{"selected":true},"id":"nsd-app-nav-item-76b3491a-aafc-4369-b648-41b62b7ef92d","text":"ArchitectureElement","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../CompositeNode/index.html';"},"data-nsd-label-uuid":"96cc794b-66b6-4b5b-a8ad-ba37c3d1816d","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-97cfd18d-a01d-4ec2-ac2b-a60e2f2f3dc3","text":"CompositeNode","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Concern/index.html';"},"data-nsd-label-uuid":"4aa2fbe3-d33e-48c3-81f1-b9976b66d0ff","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-57db0492-c208-4798-ad4c-6d5dce7dce7b","text":"Concern","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Domain/index.html';"},"data-nsd-label-uuid":"05d761e7-94d0-4729-bf7c-c9cbe95b78ae","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-ef9f2864-41bb-488a-acef-dd9f99ee827c","text":"Domain","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Event/index.html';"},"data-nsd-label-uuid":"39e42290-c365-4266-b887-5711c75badc4","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-d142e943-a42c-4508-92d0-7dfaff976447","text":"Event","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Facet/index.html';"},"data-nsd-label-uuid":"70d3c4d8-b727-4d23-8f5d-d50cdcc30286","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-0bd82941-0b71-477e-8fe6-778293133891","text":"Facet","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Impact/index.html';"},"data-nsd-label-uuid":"b727a933-c5e0-4451-8bb6-ce19dd0dd023","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-2d388530-5bc9-4e41-9e4b-6e30090e4a96","text":"Impact","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../ImpactType/index.html';"},"data-nsd-label-uuid":"cc361c1f-fe7f-4774-abd4-e4113113df2a","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-0478529d-4c64-4894-a1cc-e872c119ae7a","text":"ImpactType","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../ModelElement/index.html';"},"data-nsd-label-uuid":"3b3c484d-3ee8-4af8-896c-8c4b7d5439b0","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-3b278ec3-20ec-4680-ae3b-cc3e381d3973","text":"ModelElement","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Node/index.html';"},"data-nsd-label-uuid":"ca6c73b9-b581-4e28-95b7-7a357c694d0f","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-82ad5ff9-88d3-446b-a9af-8e72eec6cfd4","text":"Node","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Relationship/index.html';"},"data-nsd-label-uuid":"06a7d865-bdde-4b2d-8cca-3f849d00a28b","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-274642df-df6c-4c4c-9e16-e4e9f5b43485","text":"Relationship","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Stage/index.html';"},"data-nsd-label-uuid":"1f14730c-2be8-404c-a470-d0b08744a66c","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-b935e71f-1526-4cdb-97aa-07dcc18db822","text":"Stage","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Stakeholder/index.html';"},"data-nsd-label-uuid":"e4a6d259-83cd-4c5a-9c72-ea1446846785","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-7843269f-48bf-4ab9-acee-e70dc598770f","text":"Stakeholder","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Tag/index.html';"},"data-nsd-label-uuid":"ea654d63-0804-462f-a395-caaf42303077","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-799224ba-83f0-4e0b-bfeb-3db8846c11a1","text":"Tag","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../View/index.html';"},"data-nsd-label-uuid":"21123c50-5afd-4638-ab2d-5fe869cc2e3a","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-8e211578-c376-4da7-afc7-c1bd4f89e458","text":"View","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../ViewElement/index.html';"},"data-nsd-label-uuid":"96a0603d-f8a6-4af8-93ae-956c390ff81e","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-dd88c210-0456-4b47-b4aa-0ece189efc87","text":"ViewElement","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../Viewpoint/index.html';"},"data-nsd-label-uuid":"fd5ca0ca-ec8f-49ec-9505-d43f469eeb92","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif","id":"nsd-app-nav-item-77fe0b83-024d-46bd-ac84-e1e404cb2f48","text":"Viewpoint","type":"leaf"}],"data-nsd-label-uuid":"4ecf81bf-30ea-4b4d-995c-7ebbf041b205","icon":"https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EPackage.gif","id":"nsd-app-nav-item-f7c7f37a-5cb9-44a6-a5c0-7819b31a3fd8","text":"core"},{"data-nsd-label-uuid":"523e7b57-baec-41b4-b171-085fc4f2d351","id":"nsd_hk","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../../../cloud/index.html';"},"children":[{"a_attr":{"onclick":"window.location='../../../../../cloud/azure/index.html';"},"children":[{"data-nsd-label-uuid":"98e70501-2ce2-45a8-b6b6-fd8e2a670e45","id":"nsd_hl","type":"leaf"},{"data-nsd-label-uuid":"13530d46-8b2f-4567-9b2e-7b8b4a964ba5","id":"nsd_hm","type":"leaf"},{"data-nsd-label-uuid":"b4312fba-0888-47e8-8d46-43d828952d98","id":"nsd_hn","type":"leaf"},{"data-nsd-label-uuid":"a96d32c1-a8ce-4ad3-83f8-32b00c01497c","id":"nsd_ho","type":"leaf"}],"data-nsd-label-uuid":"c62aa15b-9bb3-48c0-a715-1128b27e1419","icon":"https://img.icons8.com/fluency/16/null/azure-1.svg","id":"nsd-app-nav-item-0a21bf62-8a7d-42d1-a4d4-acfb808e4399","text":"Azure"}],"data-nsd-label-uuid":"a478ba76-cf34-4146-bded-f1cc54a1d052","icon":"https://img.icons8.com/stickers/16/null/cloud-computing.svg","id":"nsd-app-nav-item-07aeef92-b4be-422e-be25-20233c86a4f9","text":"Cloud"},{"a_attr":{"onclick":"window.location='../../../../../containers/index.html';"},"children":[{"data-nsd-label-uuid":"42d222ac-6695-458d-9e8d-e79bfa127bab","id":"nsd_hr","type":"leaf"},{"data-nsd-label-uuid":"0e042613-a50e-48d2-ba6b-6ab2d05751bd","id":"nsd_hs","type":"leaf"},{"data-nsd-label-uuid":"ba83f2eb-25e1-4b79-9a01-57bedf266387","id":"nsd_ht","type":"leaf"}],"data-nsd-label-uuid":"ed0011f6-6df7-4d51-89be-7cc829681f13","icon":"https://img.icons8.com/external-smashingstocks-isometric-smashing-stocks/16/null/external-container-logistic-smashingstocks-isometric-smashing-stocks.svg","id":"nsd-app-nav-item-795d9c40-b4bb-4fb6-b4ec-2640e4bb3490","text":"Containers"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel"}}));
+// Tokens: searchInputSelector, timer, treeSelector
+$('#5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel_searchInput').keyup(function () {
+    if (window['nsd_jstTreeSearchTimer_nsd_hv']) { 
+		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_hv']); 
+	}
+    window['nsd_jstTreeSearchTimer_nsd_hv'] = setTimeout(function () {
+      var v = $('#5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel_searchInput').val();
+      $('#5dca71c2-085d-4338-8b5e-23ab855846af-navigation-panel').jstree(true).search(v);
+    }, 250);
+  });
+
+});</script>
+        </div>
+        <div data-nsd-label-uuid="046aed09-563e-4513-ba7a-3b41caf9c99e" data-nsd-action-uris="uuid:046aed09-563e-4513-ba7a-3b41caf9c99e" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-breadcrumb-row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../../../../index.html" data-nsd-label-uuid="4ecf81bf-30ea-4b4d-995c-7ebbf041b205">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EPackage.gif" class="nsd-app-label-icon">core</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="../../index.html" data-nsd-label-uuid="8a51d796-5aa6-48ec-88c6-cc3bc4714722">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EClass.gif" class="nsd-app-label-icon">ArchitectureElement</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="../../references.html" data-nsd-label-uuid="7e014d3d-2950-4d49-9bf7-146b6229a625">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif" class="nsd-app-label-icon">References</a>
+                    </li>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="046aed09-563e-4513-ba7a-3b41caf9c99e"><img src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif" class="nsd-app-label-icon">viewElements</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <h1><span data-nsd-label-uuid="046aed09-563e-4513-ba7a-3b41caf9c99e" class="nsd-app-content-panel-title"><img src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif" class="nsd-app-label-icon">viewElements</span>
+                </h1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col"><div class="markdown-body"><p>View elements representing this architecture element. A computed opposite to ViewElement.architectureElement.</p>
+</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

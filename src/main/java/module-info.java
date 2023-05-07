@@ -15,5 +15,7 @@ module org.nasdanika.architecture.doc {
 	requires org.nasdanika.architecture.containers.docker;
 	requires org.nasdanika.architecture.containers.kubernetes;	
 	requires org.nasdanika.architecture.containers.helm;	
+
+	requires org.apache.commons.codec;
 	
 }
