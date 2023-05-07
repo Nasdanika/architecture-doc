@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EParameter;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
@@ -52,6 +53,7 @@ import org.nasdanika.html.model.app.gen.ActionSiteGenerator;
 import org.nasdanika.html.model.app.graph.Registry;
 import org.nasdanika.html.model.app.graph.URINodeProcessor;
 import org.nasdanika.html.model.app.graph.emf.EObjectReflectiveProcessorFactory;
+import org.nasdanika.ncore.NcorePackage;
 
 /**
  * Tests Ecore -> Graph -> Processor -> actions generation
@@ -95,9 +97,11 @@ public class TestGraphArchitectureEcoreDoc {
 	@Test
 	public void testGraphEcoreDoc() throws IOException, DiagnosticException {
 		List<EPackage> ePackages = Arrays.asList(
+				EcorePackage.eINSTANCE,
+				
 				org.nasdanika.ncore.NcorePackage.eINSTANCE,
 				
-				org.nasdanika.architecture.core.CorePackage.eINSTANCE);//,
+				org.nasdanika.architecture.core.CorePackage.eINSTANCE); //,
 //				org.nasdanika.architecture.c4.C4Package.eINSTANCE,
 //				
 //				org.nasdanika.architecture.cloud.azure.core.CorePackage.eINSTANCE,
@@ -136,6 +140,7 @@ public class TestGraphArchitectureEcoreDoc {
 			}
 			return null;
 		});
+		
 		EObjectReflectiveProcessorFactory eObjectReflectiveProcessorFactory = new EObjectReflectiveProcessorFactory(IntrospectionLevel.ACCESSIBLE, ecoreNodeProcessorFactory);
 		
 		org.nasdanika.html.model.app.graph.Registry<URI> registry = eObjectReflectiveProcessorFactory.createProcessors(nodes, progressMonitor);
@@ -158,9 +163,11 @@ public class TestGraphArchitectureEcoreDoc {
 		Map<String,URINodeProcessor> topLevelProcessors = new HashMap<>();
 		Collection<Throwable> resolveFailures = new ArrayList<>();		
 		URI baseModelURI = URI.createURI("ecore://nasdanika.org/");
-		URI baseActionURI = URI.createURI("https://architecture.nasdanika.org/");
+		URI baseActionURI = URI.createURI("tmp-https://architecture.nasdanika.org/");
 		
 		Map<EPackage, URI> packageURIMap = Map.ofEntries(
+			Map.entry(EcorePackage.eINSTANCE, URI.createURI("https://ecore.nasdanika.org/")),
+			
 			Map.entry(org.nasdanika.ncore.NcorePackage.eINSTANCE, URI.createURI("https://docs.nasdanika.org/core/ncore/model/")),	
 			
 			Map.entry(org.nasdanika.architecture.core.CorePackage.eINSTANCE, URI.createURI("core/").resolve(baseActionURI)),	
@@ -188,7 +195,10 @@ public class TestGraphArchitectureEcoreDoc {
 						if (processor instanceof URINodeProcessor) {
 							URINodeProcessor uriNodeProcessor = (URINodeProcessor) processor;
 							uriNodeProcessor.resolve(packageURIMap.get(topLevelPackage), progressMonitor);
-							topLevelProcessors.put(URI.createURI(topLevelPackage.getNsURI()).deresolve(baseModelURI, true, true, true).toString(), uriNodeProcessor);
+							
+							if (topLevelPackage != EcorePackage.eINSTANCE && topLevelPackage != NcorePackage.eINSTANCE) { // External EPackages							
+								topLevelProcessors.put(URI.createURI(topLevelPackage.getNsURI()).deresolve(baseModelURI, true, true, true).toString(), uriNodeProcessor);
+							}
 						}
 					}
 				}
