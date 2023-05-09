@@ -1,6 +1,6 @@
 [
     {
-        "identifiers": ["uuid:1e16008f-8f43-4e42-9670-372ab6e684c0"],
+        "identifiers": ["uuid:5d53c844-1bdf-444e-b89a-68633ff9a320"],
         "name": "Nasdanika",
         "icon": "https://docs.nasdanika.org/images/nasdanika-logo.png",
         "location": "https://www.nasdanika.org",
@@ -12,9 +12,9 @@
     {
         "container": {
             "reference": "children",
-            "identifiers": ["uuid:1e16008f-8f43-4e42-9670-372ab6e684c0"]
+            "identifiers": ["uuid:5d53c844-1bdf-444e-b89a-68633ff9a320"]
         },
-        "identifiers": ["uuid:712dd58d-ef71-4c3b-b7a1-c63dd075e07b"],
+        "identifiers": ["uuid:1ab088a4-a672-4c18-8c4d-ba885d9fb427"],
         "name": "Architecture Models Documentation",
         "icon": "fa fa-book",
         "location": "index.html",
@@ -26,9 +26,9 @@
     {
         "container": {
             "reference": "children",
-            "identifiers": ["uuid:712dd58d-ef71-4c3b-b7a1-c63dd075e07b"]
+            "identifiers": ["uuid:1ab088a4-a672-4c18-8c4d-ba885d9fb427"]
         },
-        "identifiers": ["uuid:d719099c-3727-451e-9261-97d4ddb2eab5"],
+        "identifiers": ["uuid:abe24088-cdb8-450f-a6da-976b15b366e5"],
         "name": "Cloud",
         "icon": "https://img.icons8.com/stickers/16/null/cloud-computing.svg",
         "location": "cloud/index.html",
@@ -40,9 +40,9 @@
     {
         "container": {
             "reference": "children",
-            "identifiers": ["uuid:d719099c-3727-451e-9261-97d4ddb2eab5"]
+            "identifiers": ["uuid:abe24088-cdb8-450f-a6da-976b15b366e5"]
         },
-        "identifiers": ["uuid:61d578fd-0b6a-4303-9459-d2c61c46b871"],
+        "identifiers": ["uuid:ad1414a7-4d53-4793-9a67-c3a966c03f79"],
         "name": "Azure",
         "icon": "https://img.icons8.com/fluency/16/null/azure-1.svg",
         "location": "cloud/azure/index.html",
@@ -54,9 +54,9 @@
     {
         "container": {
             "reference": "children",
-            "identifiers": ["uuid:712dd58d-ef71-4c3b-b7a1-c63dd075e07b"]
+            "identifiers": ["uuid:1ab088a4-a672-4c18-8c4d-ba885d9fb427"]
         },
-        "identifiers": ["uuid:10432830-614b-4b4f-9bfc-1ff0094b92e4"],
+        "identifiers": ["uuid:64d1c29b-8192-479b-823b-ee091536e6a7"],
         "name": "Containers",
         "icon": "https://img.icons8.com/external-smashingstocks-isometric-smashing-stocks/16/null/external-container-logistic-smashingstocks-isometric-smashing-stocks.svg",
         "location": "containers/index.html",
@@ -68,9 +68,9 @@
     {
         "container": {
             "reference": "children",
-            "identifiers": ["uuid:1e16008f-8f43-4e42-9670-372ab6e684c0"]
+            "identifiers": ["uuid:5d53c844-1bdf-444e-b89a-68633ff9a320"]
         },
-        "identifiers": ["uuid:effc9260-e71c-476f-81cd-e164adf73543"],
+        "identifiers": ["uuid:4893c734-9c02-4044-b0de-c624418880fd"],
         "name": "Search",
         "icon": "fas fa-search",
         "location": "search.html",
@@ -82,9 +82,9 @@
     {
         "container": {
             "reference": "children",
-            "identifiers": ["uuid:1e16008f-8f43-4e42-9670-372ab6e684c0"]
+            "identifiers": ["uuid:5d53c844-1bdf-444e-b89a-68633ff9a320"]
         },
-        "identifiers": ["uuid:eb500591-d7f9-4c18-82b9-9b7d256e4c73"],
+        "identifiers": ["uuid:38117d27-f983-44b9-9638-e21023f6d9ce"],
         "name": "Glossary",
         "icon": "fas fa-book",
         "location": "glossary.html",
@@ -134,9 +134,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:6a451d27-2393-4969-b39d-c59691ada588"]
+            "identifiers": ["uuid:8e797a70-d553-40e4-b004-065cc91fb3d1"]
         },
-        "identifiers": ["uuid:85c1e38c-88a3-4c2a-8b0b-e6d4faf027fe"],
+        "identifiers": ["uuid:7edb3bfd-a0f3-4849-8f98-a9d284f61283"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/ArchitectureElement/references.html",
@@ -260,9 +260,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:8343fa3b-c054-4226-8ae8-47ea25b995a8"]
+            "identifiers": ["uuid:04c783ed-cb6f-4ab0-acc0-8cd709ad7c63"]
         },
-        "identifiers": ["uuid:8513a3ca-2e05-4c16-963b-76971efcd61a"],
+        "identifiers": ["uuid:48f7a5b6-bc70-4a1b-adb9-e58cd09d3805"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/CompositeNode/references.html",
@@ -288,9 +288,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:188c80f4-538b-41bf-95dd-05bebb188117"]
+            "identifiers": ["uuid:af78fca5-129a-47da-bc22-1f4dea42678c"]
         },
-        "identifiers": ["uuid:8283559c-9ac0-4533-86d9-451ef5112d49"],
+        "identifiers": ["uuid:d3b2ae79-9d37-45c7-9eab-fed63294feeb"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Concern/references.html",
@@ -344,9 +344,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:85fdd890-f1d7-4842-bdf6-ea94211150b5"]
+            "identifiers": ["uuid:9eb8445e-f047-413c-801d-0198791817fc"]
         },
-        "identifiers": ["uuid:cee48f32-6234-4104-861d-70819cc036c7"],
+        "identifiers": ["uuid:c806f971-2779-46bf-bfbb-20cff3d1b488"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Domain/references.html",
@@ -386,9 +386,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:a0bf0fdd-b735-42a5-9d57-6cea27e2d035"]
+            "identifiers": ["uuid:59c72674-c181-4453-8c66-f43eafbc4366"]
         },
-        "identifiers": ["uuid:771dd0d0-729b-4eec-865e-0156bbd0f49e"],
+        "identifiers": ["uuid:cbb84b5b-e440-40f0-922f-3b53b62c1f03"],
         "name": "Operations",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EOperation.gif",
         "location": "core/eClassifiers/Event/operations.html",
@@ -400,9 +400,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:a0bf0fdd-b735-42a5-9d57-6cea27e2d035"]
+            "identifiers": ["uuid:59c72674-c181-4453-8c66-f43eafbc4366"]
         },
-        "identifiers": ["uuid:884f32f3-3ad7-4332-90ec-3a113a3da223"],
+        "identifiers": ["uuid:5bffbe81-6a3d-491b-b176-e0c781f9d1b9"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Event/references.html",
@@ -442,9 +442,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:a2b88baa-ee1b-4c52-a284-09580eb0f6fb"]
+            "identifiers": ["uuid:60c88a83-cb3d-4c77-8117-13754d356e07"]
         },
-        "identifiers": ["uuid:68ce3af1-e363-4b34-be1f-639b7a28989a"],
+        "identifiers": ["uuid:c9d58111-f924-444a-bf4c-1973c153b6f7"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Impact/references.html",
@@ -498,9 +498,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:e36dd61c-40d9-4781-b1a3-57d2ff0bd995"]
+            "identifiers": ["uuid:7ab0f85b-68d8-4156-b0b8-1077122f95d6"]
         },
-        "identifiers": ["uuid:e191113d-f572-4d00-b07e-13d2fb85e46a"],
+        "identifiers": ["uuid:dd0ddfaf-8beb-4608-91ac-9e94a0e47d36"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/ImpactType/references.html",
@@ -526,9 +526,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:c6bb623d-0295-491f-9bc3-c9c8960c5bd2"]
+            "identifiers": ["uuid:bdf4ba3e-2314-420f-a8ca-62d1628ac1b3"]
         },
-        "identifiers": ["uuid:eba85c71-0f88-4e07-8d93-86900a26c077"],
+        "identifiers": ["uuid:7a124a31-9a8f-47ca-b24b-b7c132dac850"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/ModelElement/references.html",
@@ -554,9 +554,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:1fb63330-8ddd-4450-ae63-f6a0c8a16828"]
+            "identifiers": ["uuid:fc00a62b-8369-45b7-8e08-ac4b6c6f153d"]
         },
-        "identifiers": ["uuid:ecaecffe-cc13-492b-ba58-b77de96b4164"],
+        "identifiers": ["uuid:be0feb78-8dd8-4488-839b-211733378d82"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Node/references.html",
@@ -610,9 +610,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:a6c1fe6e-713b-4058-bcfa-d2e07d3e0a6b"]
+            "identifiers": ["uuid:cf9929b8-6d9c-4337-b3c3-8bae473f8df0"]
         },
-        "identifiers": ["uuid:90e587e9-763e-4221-9216-202ce93e2afb"],
+        "identifiers": ["uuid:45a483e8-bb94-4b38-8d5f-61ed6bea7fd5"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Relationship/references.html",
@@ -652,9 +652,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:3708861a-4f65-4562-91f5-d9313e31aeb6"]
+            "identifiers": ["uuid:151547c9-3198-4835-9f03-efbfcac5d255"]
         },
-        "identifiers": ["uuid:44c9faea-eb5b-46d0-ab81-5c160eeeb6b3"],
+        "identifiers": ["uuid:163664db-5d08-4d58-9c99-dc56800b99eb"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Stage/references.html",
@@ -694,9 +694,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:9dbd0a60-fc8c-4932-8ed7-c31b138a314d"]
+            "identifiers": ["uuid:9e842504-cbf3-4232-8448-9b2a7e7dcea8"]
         },
-        "identifiers": ["uuid:822412e4-e01f-4d3b-acb7-794a71087030"],
+        "identifiers": ["uuid:c4d95835-9de0-4a75-8532-a76ae7e5a857"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Stakeholder/references.html",
@@ -736,9 +736,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:7383510a-cff8-4d72-82eb-12f067bed484"]
+            "identifiers": ["uuid:ccee27a4-2cf6-4f06-92b7-e43b320c08d8"]
         },
-        "identifiers": ["uuid:96464e7a-d0d1-4d5c-93bd-34f27a9ba8a0"],
+        "identifiers": ["uuid:3095883d-3c57-4040-91cc-03266801b6c9"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Tag/references.html",
@@ -778,9 +778,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:de7ac71a-70da-4aec-a9ff-6fc97e8d8744"]
+            "identifiers": ["uuid:2220f8a9-8291-4c85-a79c-5fa24154c82b"]
         },
-        "identifiers": ["uuid:40b55bad-90b5-443b-b608-b468a7658999"],
+        "identifiers": ["uuid:780a64ac-e1f2-4d39-a080-ab6323a4d03e"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/View/references.html",
@@ -834,9 +834,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:1ec7134f-d0af-402e-9162-f2f823a79230"]
+            "identifiers": ["uuid:defba500-243a-4eb9-b016-241deeae74f1"]
         },
-        "identifiers": ["uuid:dd4bdf0a-40f0-4e97-b716-c3c9f0ce8657"],
+        "identifiers": ["uuid:05991546-4ac8-447f-bc16-3e7e332af4c9"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/ViewElement/references.html",
@@ -890,9 +890,9 @@
     {
         "container": {
             "reference": "navigation",
-            "identifiers": ["uuid:1a7da87c-8b30-49b4-bb5f-f003da2b8820"]
+            "identifiers": ["uuid:99191a1f-a1bd-4cf9-ad25-09fcb8fefc65"]
         },
-        "identifiers": ["uuid:5ab09df1-cc0e-459c-9bf4-06fc176069f2"],
+        "identifiers": ["uuid:a03b96c5-3acc-4474-b001-fde3573f481d"],
         "name": "References",
         "icon": "https://cdn.jsdelivr.net/gh/Nasdanika/html@master/ecore.gen/web-resources/icons/EReference.gif",
         "location": "core/eClassifiers/Viewpoint/references.html",
