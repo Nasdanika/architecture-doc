@@ -2,9 +2,6 @@ package org.nasdanika.architecture.doc.tests;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -16,17 +13,10 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import org.apache.commons.codec.binary.Hex;
 import org.eclipse.emf.common.util.DiagnosticException;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EAttribute;
-import org.eclipse.emf.ecore.EClassifier;
-import org.eclipse.emf.ecore.ENamedElement;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EParameter;
-import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -41,10 +31,11 @@ import org.nasdanika.common.NasdanikaException;
 import org.nasdanika.common.NullProgressMonitor;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.graph.Element;
+import org.nasdanika.graph.emf.EObjectGraphFactory;
 import org.nasdanika.graph.emf.EObjectNode;
-import org.nasdanika.graph.emf.Util;
 import org.nasdanika.graph.processor.IntrospectionLevel;
 import org.nasdanika.graph.processor.ProcessorInfo;
+import org.nasdanika.html.ecore.gen.processors.EcoreGraphFactory;
 import org.nasdanika.html.ecore.gen.processors.EcoreNodeProcessorFactory;
 import org.nasdanika.html.model.app.Action;
 import org.nasdanika.html.model.app.Label;
@@ -61,38 +52,6 @@ import org.nasdanika.ncore.NcorePackage;
  *
  */
 public class TestGraphArchitectureEcoreDoc {
-	
-	protected Object eKeyToPathSegment(EAttribute keyAttribute, Object keyValue) {
-		return keyValue;
-	}	
-	
-	protected String path(EObjectNode source, EObjectNode target, EReference reference, int index) {
-		if (reference.getEKeys().isEmpty() && target.getTarget() instanceof ENamedElement && reference.isUnique()) {
-			String name = ((ENamedElement) target.getTarget()).getName();
-			if (target.getTarget() instanceof EOperation && !((EOperation) target.getTarget()).getEParameters().isEmpty()) {
-				StringBuilder signatureBuilder = new StringBuilder(name);
-				EOperation eOperation = (EOperation) target.getTarget();
-				// Creating a digest of parameter types to make the id shorter.
-				try {
-					MessageDigest md = MessageDigest.getInstance("SHA-256");
-					
-					for (EParameter ep: eOperation.getEParameters()) {
-						EClassifier type = ep.getEType();
-						String typeStr = type.getName() + "@" + type.getEPackage().getNsURI();
-						md.update(typeStr.getBytes(StandardCharsets.UTF_8));
-					}
-					signatureBuilder.append("-").append(Hex.encodeHexString(md.digest()));			
-	
-					return signatureBuilder.toString();
-				} catch (NoSuchAlgorithmException e) {
-					throw new NasdanikaException(e);
-				}
-			}
-			
-			return name;
-		}
-		return Util.path(source, target, reference, index, this::eKeyToPathSegment);
-	}
 	
 	@Test
 	public void testGraphEcoreDoc() throws IOException, DiagnosticException {
@@ -120,7 +79,11 @@ public class TestGraphArchitectureEcoreDoc {
 //				AppPackage.eINSTANCE);
 				
 		List<EPackage> topLevelPackages = ePackages.stream().filter(ep -> ep.getESuperPackage() == null).collect(Collectors.toList());
-		List<EObjectNode> nodes = Util.load(topLevelPackages, this::path);
+		
+		// TODO - move to eCore module
+		EObjectGraphFactory graphFactory = new EcoreGraphFactory();
+		
+		List<EObjectNode> nodes = graphFactory.createGraph(topLevelPackages);
 		
 		Context context = Context.EMPTY_CONTEXT;
 		ProgressMonitor progressMonitor = new NullProgressMonitor(); // new PrintStreamProgressMonitor();
