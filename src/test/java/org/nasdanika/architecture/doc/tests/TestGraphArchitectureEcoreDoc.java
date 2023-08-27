@@ -83,10 +83,10 @@ public class TestGraphArchitectureEcoreDoc {
 		// TODO - move to eCore module
 		EObjectGraphFactory graphFactory = new EcoreGraphFactory();
 		
-		List<EObjectNode> nodes = graphFactory.createGraph(topLevelPackages);
+		ProgressMonitor progressMonitor = new NullProgressMonitor(); // new PrintStreamProgressMonitor();
+		List<EObjectNode> nodes = graphFactory.createGraph(topLevelPackages, progressMonitor);
 		
 		Context context = Context.EMPTY_CONTEXT;
-		ProgressMonitor progressMonitor = new NullProgressMonitor(); // new PrintStreamProgressMonitor();
 		Consumer<Diagnostic> diagnosticConsumer = d -> d.dump(System.out, 0);
 		
 		List<Function<URI,Action>> actionProviders = new ArrayList<>();		
